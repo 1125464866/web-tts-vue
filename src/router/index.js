@@ -5,6 +5,7 @@ import Entry from "../components/Entry.vue"
 import AudioToWord from "@/view/AudioToWord"
 import WordToAudio from "@/view/WordToAudio"
 import WordToAudioV2 from "@/view/WordToAudioV2"
+import FastWhisper from "@/view/fastWhisper.vue"
 
 Vue.use(Router)
 export default new Router({
@@ -32,6 +33,11 @@ export default new Router({
             path: "/wordToAudioV2",
             name: "WordToAudioV2",
             component: WordToAudioV2
+        },
+        {
+            path: "/FastWhisper",
+            name: "FastWhisper",
+            component: FastWhisper
         },
     ]
 })

@@ -10,6 +10,9 @@
             <el-card>
                 <el-button type="success" @click="toWordV2">文字转语音(文本跟随朗读变色)</el-button>
             </el-card>
+          <el-card>
+            <el-button type="success" @click="toWordV3">fast-whisper测试</el-button>
+          </el-card>
         </el-card>
     </div>
 </template>
@@ -31,7 +34,10 @@ export default {
         },
         toWordV2() {
             this.$router.push({ path: "/wordToAudioV2" })
-         }
+       },
+        toWordV3() {
+          this.$router.push({ path: "/FastWhisper" })
+        }
     }
 }
 </script>
