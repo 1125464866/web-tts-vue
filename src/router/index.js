@@ -6,6 +6,7 @@ import AudioToWord from "@/view/AudioToWord"
 import WordToAudio from "@/view/WordToAudio"
 import WordToAudioV2 from "@/view/WordToAudioV2"
 import FastWhisper from "@/view/fastWhisper.vue"
+import OpenLayersMap from "@/view/OpenLayersMap.vue"
 
 Vue.use(Router)
 export default new Router({
@@ -38,6 +39,11 @@ export default new Router({
             path: "/FastWhisper",
             name: "FastWhisper",
             component: FastWhisper
+        },
+        {
+            path: "/OpenLayersMap",
+            name: "OpenLayersMap",
+            component: OpenLayersMap
         },
     ]
 })

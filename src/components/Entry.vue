@@ -13,6 +13,9 @@
           <el-card>
             <el-button type="success" @click="toWordV3">fast-whisper测试</el-button>
           </el-card>
+          <el-card>
+            <el-button type="success" @click="toOpenLayersMap">OpenLayers地图测试</el-button>
+          </el-card>
         </el-card>
     </div>
 </template>
@@ -37,6 +40,9 @@ export default {
        },
         toWordV3() {
           this.$router.push({ path: "/FastWhisper" })
+        },
+        toOpenLayersMap() {
+          this.$router.push({ path: "/OpenLayersMap" })
         }
     }
 }
