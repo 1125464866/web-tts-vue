@@ -16,6 +16,9 @@
           <el-card>
             <el-button type="success" @click="toOpenLayersMap">OpenLayers地图测试</el-button>
           </el-card>
+          <el-card>
+            <el-button type="success" @click="toLogicFlowDemo">LogicFlow流程图</el-button>
+          </el-card>
         </el-card>
     </div>
 </template>
@@ -43,6 +46,9 @@ export default {
         },
         toOpenLayersMap() {
           this.$router.push({ path: "/OpenLayersMap" })
+        },
+        toLogicFlowDemo() {
+          this.$router.push({ path: "/LogicFlowDemo" })
         }
     }
 }
